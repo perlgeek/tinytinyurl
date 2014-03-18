@@ -33,7 +33,7 @@ post '/' do
   id = items.insert(:url => params[:url])
   url = request.url + id.to_s(BASE)
   "Your tiny tiny url is: <a href='#{url}'>#{url}</a>"
-end
+end 
 
 get '/:tinyid' do
   # Resolve the tiny URL
